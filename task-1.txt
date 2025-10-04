@@ -1,4 +1,45 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No:250541616
+AD-SOYAD:Enes Zukra
+ŞUBE:1-B
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+( ALGORİTMA Optimum_Butceli_Alisveris )
+
+GİRDİ:
+    butce ← kullanıcıdan alınan toplam bütçe
+    urun_listesi ← [ {isim, fiyat, oncelik}, ... ]
+
+ÇIKTI:
+    sepetteki_urunler ← alınan ürünlerin listesi
+    kalan_butce ← bütçeden arta kalan miktar
+
+BAŞLA
+
+1. sepetteki_urunler ← boş liste
+2. urun_listesi ← oncelik artan sırada sırala
+   (öncelik 1 → önce, 3 → en sonra)
+3. Aynı öncelikte olan ürünleri fiyat artan sıraya göre sırala
+
+4. HER urun ∈ urun_listesi İÇİN TEKRAR ET
+       EĞER urun.fiyat ≤ butce İSE
+           sepetteki_urunler'e urun'u EKLE
+           butce ← butce - urun.fiyat
+       DEĞİLSE
+           "Bütçe bu ürün için yeterli değil" yaz
+       SON
+       EĞER butce ≤ 0 İSE
+           DÖNGÜDEN ÇIK
+       SON
+   SON
+
+5. kalan_butce ← butce
+
+6. "Alınan ürünler:" yaz
+   HER urun ∈ sepetteki_urunler İÇİN
+       urun.isim ve urun.fiyat yaz
+   SON
+
+7. "Kalan bütçe:" kalan_butce yaz
+
+BİTİR
+
