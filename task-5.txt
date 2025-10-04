@@ -1,4 +1,28 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No:250541616
+AD-SOYAD:Enes Zukra
+ŞUBE:1-B
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+
+ZEKA KÜPÜNÜ ÇÖZME ALGORİTMASI
+
+FONKSİYON ApplySequence(cube, seq)
+    // seq: örn ["R","U","R'","U'"]
+    HER move ∈ seq İÇİN
+        ApplyMove(cube, move)
+    SON
+SON
+
+FONKSİYON RotateFaceClockwise(face)  // detay: face matrisini döndür
+    // ... (implementasyon ayrıntısı)
+SON
+
+FONKSİYON IsCrossSolved(cube, color)
+    // D üst yüzündeki orta kenarların hepsi 'color' ve yan renkleri uygun mu kontrol et
+    // return TRUE / FALSE
+SON
+
+FONKSİYON IsCornerOriented(cube, corner_position, target_color)
+    // corner_position: örn ("U","F","R") köşesi; hedef renk üstte mi kontrol et
+    // return TRUE / FALSE
+SON
