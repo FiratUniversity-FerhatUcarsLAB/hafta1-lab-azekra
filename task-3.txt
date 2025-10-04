@@ -1,4 +1,45 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No:250541616
+AD-SOYAD:Enes Zukra
+ŞUBE:1-B
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+
+ALGORİTMA: NOTLAR SIRALAMA
+
+GİRDİ:
+    notlar ← [öğrenci notları listesi]
+    n ← notlar uzunluğu
+
+ÇIKTI:
+    sirali_notlar ← en yüksekten en düşüğe sıralanmış liste
+
+BAŞLA
+
+1. "Kaç öğrenci var?" sor
+2. n ← kullanıcıdan al
+3. notlar ← boş liste
+
+4. i ← 1'DEN n'E KADAR TEKRAR ET
+       "Öğrenci", i, "için not gir:" yaz
+       yeni_not ← kullanıcıdan al
+       notlar[i] ← yeni_not
+   SON
+
+5. // SIRALAMA BAŞLANGICI (Bubble Sort yöntemi)
+   j ← 0'DAN n-2'YE KADAR TEKRAR ET
+       i ← 0'DAN n-2-j'YE KADAR TEKRAR ET
+           EĞER notlar[i] < notlar[i+1] İSE
+               // yer değiştir
+               geçici ← notlar[i]
+               notlar[i] ← notlar[i+1]
+               notlar[i+1] ← geçici
+           SON
+       SON
+   SON
+
+6. "Notlar büyükten küçüğe sıralandı:" yaz
+7. HER not ∈ notlar İÇİN
+       not yaz
+   SON
+
+8. BİTİR
