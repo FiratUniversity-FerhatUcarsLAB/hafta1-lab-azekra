@@ -1,4 +1,67 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No:250541616
+AD-SOYAD:Enes Zukra
+ŞUBE:1-B
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+
+( ALGORİTMA BASİT KART OYUNU STRATEJİSİ )
+
+GİRDİ:
+    Deste = [1,2,3,4,5,6,7,8,9,10,11]  // basit değerler
+    Oyuncu_puan = 0
+    Bilgisayar_puan = 0
+
+ÇIKTI:
+    Kazanan bilgisi
+
+BAŞLA
+
+1. Oyuncu_puan ← rastgele iki kartın toplamı
+2. Bilgisayar_puan ← rastgele iki kartın toplamı
+
+3. "Oyuncu puanın:", Oyuncu_puan yaz
+
+4. // OYUNCU SIRASI
+   TEKRAR
+       "Kart çekmek ister misin? (E/H)" sor
+       EĞER cevap == "E" İSE
+           yeni_kart ← desteden rastgele bir kart seç
+           Oyuncu_puan ← Oyuncu_puan + yeni_kart
+           "Yeni puanın:", Oyuncu_puan yaz
+       DEĞİLSE
+           DÖNGÜDEN ÇIK
+       SON
+   OYUNCU_puan > 21 İSE
+       "Oyuncu yandı! (puan 21'i geçti)" yaz
+       KAZANAN ← "Bilgisayar"
+       OYUNU BİTİR
+   SON
+   OYUNCU durduğunda:
+       "Bilgisayar sırası..." yaz
+
+5. // BİLGİSAYAR STRATEJİSİ
+   WHILE Bilgisayar_puan < 17 TEKRAR ET
+       yeni_kart ← desteden rastgele bir kart seç
+       Bilgisayar_puan ← Bilgisayar_puan + yeni_kart
+   SON
+
+   EĞER Bilgisayar_puan > 21 İSE
+       "Bilgisayar yandı!" yaz
+       KAZANAN ← "Oyuncu"
+       OYUNU BİTİR
+   SON
+
+6. // KAZANANI BELİRLE
+   EĞER Oyuncu_puan > Bilgisayar_puan VE Oyuncu_puan ≤ 21 İSE
+       KAZANAN ← "Oyuncu"
+   DEĞİLSE EĞER Bilgisayar_puan > Oyuncu_puan VE Bilgisayar_puan ≤ 21 İSE
+       KAZANAN ← "Bilgisayar"
+   DEĞİLSE
+       KAZANAN ← "Berabere"
+   SON
+
+7. "Oyuncu puanı:", Oyuncu_puan yaz
+8. "Bilgisayar puanı:", Bilgisayar_puan yaz
+9. "Kazanan:", KAZANAN yaz
+
+BİTİR
