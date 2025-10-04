@@ -1,4 +1,43 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No:250541616
+AD-SOYAD:Enes Zukra
+ŞUBE:1-B
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+
+RENKLERİ KARIŞTIRARAK HEDEF RENGİ ELDE ETME ALGORİTMASI
+
+GİR
+
+FONKSİYON clamp(x, min, max)
+    EĞER x < min İSE dön min
+    EĞER x > max İSE dön max
+    DÖN x
+SON
+
+FONKSİYON normalize_color(rgb)   // rgb: [r,g,b] her biri 0..255
+    DÖN [rgb[0]/255, rgb[1]/255, rgb[2]/255]
+SON
+
+FONKSİYON color_distance(a, b)   // a,b ∈ [0..1]^3
+    // Basit: Öklidyen mesafe
+    d0 ← a[0] - b[0]
+    d1 ← a[1] - b[1]
+    d2 ← a[2] - b[2]
+    DÖN sqrt(d0*d0 + d1*d1 + d2*d2)
+SON
+
+FONKSİYON mix(pigments, weights)  // pigments: liste renk vektörleri, weights eşit uzunlukta
+    result ← [0,0,0]
+    FOR i FROM 0 TO len(pigments)-1 TEKRAR ET
+        result[0] ← result[0] + pigments[i][0] * weights[i]
+        result[1] ← result[1] + pigments[i][1] * weights[i]
+        result[2] ← result[2] + pigments[i][2] * weights[i]
+    SON
+    // opsiyonel: clamp her bileşeni 0..1
+    result[0] ← clamp(result[0], 0, 1)
+    result[1] ← clamp(result[1], 0, 1)
+    result[2] ← clamp(result[2], 0, 1)
+    DÖN result
+
+BİTİŞ
+
