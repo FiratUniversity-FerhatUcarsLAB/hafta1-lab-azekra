@@ -5,6 +5,8 @@ AD-SOYAD:Enes Zukra
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
 ( ALGORİTMA Optimum_Butceli_Alisveris )
 
+PSUEDOCODE (Adım Adım) 
+
 GİRDİ:
     butce ← kullanıcıdan alınan toplam bütçe
     urun_listesi ← [ {isim, fiyat, oncelik}, ... ]
@@ -42,4 +44,31 @@ BAŞLA
 7. "Kalan bütçe:" kalan_butce yaz
 
 BİTİR
+
+
+
+FARKLI ÇÖZÜM VERSİYONLARININ KARŞILAŞTIRMASI
+
+
+
+1. Sıralı Kontrol Algoritması: 
+   Ürünler sırayla değerlendirilir. Küçük veri kümelerinde etkili, ancak büyük listelerde yavaştır.  
+
+2. Fiyat/Performans Öncelikli Seçim: 
+   Ürünleri fiyat/kalite oranına göre sıralar. Daha mantıklı seçimler yapılır,  
+   ancak ek hesaplama gerekir.
+
+3. Dinamik Programlama (Knapsack Yaklaşımı):
+   En optimum bütçe kullanımını sağlar. Matematiksel olarak en doğru sonuç verir,  
+   ama manuel olarak uygulanması zordur.
+
+LLM İLE KONUŞMA GEÇMİŞİ
+
+“[Optimum Bütçeli Market Alışverişi Algoritması] i¸cin adım adım algoritma geli¸stirmek istiyorum. Ko¸sullu durumları ve tekrar eden i¸slemleri de i¸ceren detaylı bir pseudocode yazmama yardım eder misin?”
+
+
+Tabii ki! 🌟
+Aşağıda “Optimum Bütçeli Market Alışverişi Algoritması” için adım adım düşüneceğimiz bir pseudocode (sözde kod) örneği paylaşıyorum.
+Bu algoritma, sınırlı bir bütçeyle market alışverişi yaparken ihtiyaç önceliğine göre en uygun ürünleri seçmeyi amaçlar.
+Koşullar (if–else) ve döngüler (for–while) dahil edilmiştir.
 
