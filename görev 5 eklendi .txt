@@ -6,23 +6,61 @@ Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya e
 
 ZEKA KÜPÜNÜ ÇÖZME ALGORİTMASI
 
-FONKSİYON ApplySequence(cube, seq)
-    // seq: örn ["R","U","R'","U'"]
-    HER move ∈ seq İÇİN
-        ApplyMove(cube, move)
-    SON
-SON
+PSUEDOCODE (Adım Adım)
 
-FONKSİYON RotateFaceClockwise(face)  // detay: face matrisini döndür
-    // ... (implementasyon ayrıntısı)
-SON
+GİRDİ:
+    rubik_kupu ← karışık Rubik küpü durumu
 
-FONKSİYON IsCrossSolved(cube, color)
-    // D üst yüzündeki orta kenarların hepsi 'color' ve yan renkleri uygun mu kontrol et
-    // return TRUE / FALSE
-SON
+ÇIKTI:
+    cozum_adimlari ← küpün çözülmesi için izlenecek adımlar
+    cozum_durumu ← çözülmüş küp
 
-FONKSİYON IsCornerOriented(cube, corner_position, target_color)
-    // corner_position: örn ("U","F","R") köşesi; hedef renk üstte mi kontrol et
-    // return TRUE / FALSE
-SON
+BAŞLA
+
+1. cozum_adimlari ← boş liste
+2. Önce beyaz yüzeyi çöz
+       a. Beyaz köşe parçalarını doğru konumlara yerleştir
+       b. Beyaz kenar parçalarını uygun şekilde hizala
+       c. Yapılan her hareketi cozum_adimlari'na ekle
+3. Orta katmanı çöz
+       a. Kenar parçalarını doğru konuma yerleştir
+       b. Yapılan her hareketi cozum_adimlari'na ekle
+4. Son katmanı çöz
+       a. Önce üst yüzün sarı rengini tamamla
+       b. Kenar ve köşe parçalarını doğru konumlandır
+       c. Gerekli algoritmaları (ör: F, R, U hamleleri) uygula
+       d. Yapılan her hareketi cozum_adimlari'na ekle
+5. Küp tamamen çözülene kadar adımları tekrar et
+6. cozum_durumu ← çözülmüş Rubik küpü
+7. "Çözüm adımları:" cozum_adimlari yaz
+8. "Küp çözülmüş durumda" yaz
+
+BİTİR
+
+
+FARKLI ÇÖZÜM VERSİYONLARININ KARŞILAŞTIRMASI
+
+1. **Katman Katman Yöntemi (Layer by Layer):**
+   Basit ve anlaşılır. Yeni başlayanlar için uygundur.
+   
+2. **CFOP Yöntemi (Cross, F2L, OLL, PLL):**
+   Daha hızlı çözüm sağlar. Profesyonel oyuncular tarafından tercih edilir.
+   
+3. **Rastgele/Deneme Yöntemi:**
+   Her hamle deneme yanılma ile yapılır. Öğrenme için faydalı ama yavaş ve güvenilmez.
+
+Katman katman yöntemi yeni başlayanlar için idealdir.  
+Hız ve optimizasyon önemliyse CFOP yöntemi tercih edilir.
+
+
+LLM İLE KONUŞMA GEÇMİŞİ
+
+“[Zeka küpü çözme algoritması] için adım adım algoritma geliştirmek istiyorum.
+Koşullu durumları ve tekrar eden işlemleri de içeren detaylı bir pseudocode yazmama yardım eder misin?”
+
+Tabii! 🧩  
+Bu algoritmada amaç, Rubik küpünü adım adım çözmektir.  
+Önce beyaz yüzey, sonra orta katman, son olarak üst katman çözülür.  
+Koşullar ve döngüler ile hareketler takip edilir.  
+Farklı çözüm yöntemleri ve her birinin avantajları tartışılmıştır.  
+Adımlar cozum_adimlari listesinde sıralanarak uygulanır.
