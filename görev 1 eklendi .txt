@@ -64,7 +64,8 @@ FARKLI ÇÖZÜM VERSİYONLARININ KARŞILAŞTIRMASI
 
 LLM İLE KONUŞMA GEÇMİŞİ
 
-“[Optimum Bütçeli Market Alışverişi Algoritması] i¸cin adım adım algoritma geli¸stirmek istiyorum. Ko¸sullu durumları ve tekrar eden i¸slemleri de i¸ceren detaylı bir pseudocode yazmama yardım eder misin?”
+“[Optimum Bütçeli Market Alışverişi Algoritması] için adım adım algoritma geliştirmek istiyorum. 
+Koşullu durumları ve tekrar eden işlemleri de içeren detaylı bir pseudocode yazmama yardım eder misin?”
 
 
 Tabii ki! 🌟
