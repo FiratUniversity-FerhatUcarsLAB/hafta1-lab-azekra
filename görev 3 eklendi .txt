@@ -6,6 +6,8 @@ Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya e
 
 ALGORİTMA: NOTLAR SIRALAMA
 
+PSUEDOCODE (Adım Adım)
+
 GİRDİ:
     notlar ← [öğrenci notları listesi]
     n ← notlar uzunluğu
@@ -43,3 +45,59 @@ BAŞLA
    SON
 
 8. BİTİR
+
+Öğrenci No:250541616
+AD-SOYAD:Enes Zukra
+ŞUBE:1-B
+
+Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+(ALGORİTMA Sinif_Notlarini_Siralama)
+
+PSUEDOCODE (Adım Adım)
+
+GİRDİ:
+    not_listesi ← öğrencilerin aldığı notlar [not1, not2, ..., notN]
+
+ÇIKTI:
+    sirali_notlar ← en yüksekten en düşüğe sıralanmış not listesi
+
+BAŞLA
+
+1. sirali_notlar ← boş liste
+2. sirali_notlar ← not_listesi kopyası
+3. sirali_notlar ← azalan sırada sırala
+   (en yüksek not → en düşük not)
+
+4. "Sıralanmış notlar:" yaz
+   HER not ∈ sirali_notlar İÇİN
+       not yaz
+   SON
+
+BİTİR
+
+
+FARKLI ÇÖZÜM VERSİYONLARININ KARŞILAŞTIRMASI
+
+1. **Bubble Sort (Kabarcık Sıralama):**
+   Basit ve anlaşılır. Küçük veri kümelerinde yeterli, büyük listelerde yavaş.
+
+2. **Selection Sort (Seçmeli Sıralama):**
+   Her seferinde maksimumu seçip sona koyar. Bubble sort’a göre biraz daha hızlı.
+
+3. **Hazır Sort Fonksiyonu:**
+   Python veya benzeri dillerde sort() fonksiyonu kullanılır.  
+   En hızlı ve güvenilir çözüm, manuel algoritma yazımına gerek kalmaz.
+
+Genel olarak, küçük sınıflarda manuel yöntemler yeterlidir.  
+Gerçek hayatta hazır sort fonksiyonları daha pratiktir ve güvenilirdir.
+
+
+LLM İLE KONUŞMA GEÇMİŞİ
+
+“[Sınıf notlarını en yüksekten en düşüğe sıralama] için adım adım algoritma geliştirmek istiyorum.
+Koşullu durumları ve tekrar eden işlemleri de içeren detaylı bir pseudocode yazmama yardım eder misin?”
+
+Tabii! 🎓
+Bu algoritmada amaç, öğrencilerin notlarını en yüksekten en düşüğe doğru sıralamaktır.
+For döngüsü kullanılarak her not ele alınır ve sıralama işlemi gerçekleştirilir.
+Ayrıca farklı sıralama yöntemleri de tartışılmış, avantaj ve dezavantajları belirtilmiştir.
