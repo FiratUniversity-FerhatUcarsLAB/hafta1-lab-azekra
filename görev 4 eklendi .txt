@@ -6,6 +6,8 @@ Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya e
 
 RENKLERİ KARIŞTIRARAK HEDEF RENGİ ELDE ETME ALGORİTMASI
 
+PSEUDOCODE (ADIM ADIM)
+
 GİR
 
 FONKSİYON clamp(x, min, max)
@@ -41,3 +43,31 @@ FONKSİYON mix(pigments, weights)  // pigments: liste renk vektörleri, weights 
 
 BİTİŞ
 
+
+FARKLI ÇÖZÜM VERSİYONLARININ KARŞILAŞTIRMASI
+
+1. **Sıralı Karıştırma Yöntemi:**  
+   Renkleri sırayla karıştırır. Basit ve anlaşılır, küçük örnekler için yeterli.
+
+2. **Oran Hesaplamalı Yöntem:**  
+   Hedef rengi matematiksel olarak temel renk oranlarıyla belirler.  
+   Daha doğru sonuç verir, ancak hesaplama gerektirir.
+
+3. **Deneme–Yanılma Yöntemi:**  
+   Rastgele karıştırmalarla istenen renk elde edilmeye çalışılır.  
+   Basittir ama zaman alıcı ve hataya açıktır.
+
+Genel olarak, küçük karışımlar için sıralı karıştırma yeterlidir.  
+Hedef renk hassasiyetinin önemli olduğu durumlarda oran hesaplamalı yöntem tercih edilir.
+
+
+LLM İLE KONUŞMA GEÇMİŞİ
+
+“[Renkleri karıştırarak hedef rengi elde etme] için adım adım algoritma geliştirmek istiyorum.
+Koşullu durumları ve tekrar eden işlemleri de içeren detaylı bir pseudocode yazmama yardım eder misin?”
+
+Elbette! 🎨  
+Bu algoritmada amaç, temel renkleri kullanarak hedef rengi elde etmektir.  
+Koşullu ifadeler ile hedef rengin temel renklerden olup olmadığı kontrol edilir.  
+Döngüler kullanılarak gerekli renk karışımı adım adım oluşturulur.  
+Farklı çözüm yöntemleri tartışılmış ve her birinin avantaj/dezavantajları belirtilmiştir.
