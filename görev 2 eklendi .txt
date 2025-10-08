@@ -6,6 +6,8 @@ Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya e
 
 ( ALGORİTMA BASİT KART OYUNU STRATEJİSİ )
 
+PSUEDOCODE (Adım Adım)
+
 GİRDİ:
     Deste = [1,2,3,4,5,6,7,8,9,10,11]  // basit değerler
     Oyuncu_puan = 0
@@ -65,3 +67,32 @@ BAŞLA
 9. "Kazanan:", KAZANAN yaz
 
 BİTİR
+
+FARKLI ÇÖZÜM VERSİYONLARININ KARŞILAŞTIRMASI
+
+1. **Basit Karşılaştırma Yöntemi:**
+   Her turda kart değerleri doğrudan karşılaştırılır.
+   Basit, anlaşılır ve küçük kart setlerinde hızlıdır.
+
+2. **Stratejik Oynama Yöntemi:**
+   Oyuncu, rakibin olası kartlarını tahmin ederek en uygun kartı seçer.
+   Daha akıllı oynar ama daha fazla hesaplama gerektirir.
+
+3. **Rastgele Oynama Yöntemi:**
+   Oyuncu rastgele kart seçer. Basittir ama kazanma olasılığı düşüktür.
+
+Genel olarak, küçük kart sayılarında basit yöntem yeterlidir.
+Stratejik oynama, daha büyük oyunlarda avantaj sağlar.
+
+
+LLM İLE KONUŞMA GEÇMİŞİ
+
+“[Basit kart oyunu stratejisi] için adım adım algoritma geliştirmek istiyorum.
+Koşullu durumları ve tekrar eden işlemleri de içeren detaylı bir pseudocode yazmama yardım eder misin?”
+
+Elbette! 🎯
+“Basit Kart Oyunu Stratejisi” algoritmasında amaç, oyuncunun elindeki kartları
+rakibe karşı en verimli şekilde kullanarak oyunu kazanmaktır.
+Bu süreçte if–else koşulları ve döngüler (for–while) kullanılmıştır.
+Algoritma, her turda kartların karşılaştırılması ve skorun güncellenmesi
+üzerine kuruludur. Daha sonra farklı strateji yaklaşımları karşılaştırılmıştır.
