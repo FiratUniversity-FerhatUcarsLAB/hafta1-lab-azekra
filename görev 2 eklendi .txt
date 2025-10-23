@@ -29,7 +29,7 @@ BAŞLA
        EĞER cevap == "E" İSE
            yeni_kart ← desteden rastgele bir kart seç
            Oyuncu_puan ← Oyuncu_puan + yeni_kart
-           "Yeni puanın:", Oyuncu_puan yaz
+           "Yeni puanın:", Oyuncu_puan yaz.
        DEĞİLSE
            DÖNGÜDEN ÇIK
        SON
